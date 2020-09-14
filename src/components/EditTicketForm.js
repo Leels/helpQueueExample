@@ -1,5 +1,6 @@
 import React from "react";
 import ReusableForm from "./ReusableForm";
+import PropTypes from "prop-types";
 
 function EditNewTicket(props) {
   const { ticket } = props;
@@ -17,5 +18,9 @@ function EditNewTicket(props) {
     </React.Fragment>
   );
 }
+
+EditNewTicket.propTypes = {
+  onEditTicket: PropTypes.func
+};
 
 export default EditNewTicket;
